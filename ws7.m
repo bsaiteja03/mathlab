@@ -1,0 +1,6 @@
+x=linspace(0,10,150)
+y=cos(5*x)
+plot(x,y,'color',[0,0.7,0.9])
+title('2D line plot')
+xlabel('x')
+ylabel('cos(5x)')

@@ -1,0 +1,16 @@
+% 3.apply stokes therem to evaluate integral y*dx+z*dy+x*dz ,where c is the c is the curve of intersection of the sphere x^2+y^2+z^2=a^2 and x+z=a.
+% syms x y z a
+% f = [y z x];
+% v=[x, y,z];
+% c=curl(f,v)
+% sigma=[x y z];
+% boundary=subs(sigma, x, 1);
+% nds=simplify(cross(diff(sigma,x),diff(sigma,y)))
+% int(int(dot(c, nds), y, 0, sqrt(2*x*(a-x))), x, 0, a)
+% ans:
+% c =
+%  -1
+%  -1
+%  -1
+% nds = [ 0, 0, 1]
+% ans = -(pi*2^(1/2)*a^2)/8
